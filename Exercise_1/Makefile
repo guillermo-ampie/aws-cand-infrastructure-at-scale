@@ -4,7 +4,7 @@ init:
 validate:
 	terraform validate
 
-format:
+fmt:
 	terraform fmt
 
 lint:
@@ -14,7 +14,7 @@ lint:
 plan: lint
 	terraform plan
 
-build: lint
+deploy: lint
 	terraform apply -auto-approve
 
 clean:
