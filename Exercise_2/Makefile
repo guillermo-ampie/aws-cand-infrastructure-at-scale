@@ -27,4 +27,6 @@ run-lambda:
 	cat out.txt
 
 clean:
+	-rm -r ./lambda
 	terraform destroy -auto-approve
+
