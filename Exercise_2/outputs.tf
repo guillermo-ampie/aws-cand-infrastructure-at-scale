@@ -6,19 +6,19 @@ output "aws_region" {
 }
 
 output "lambda_bucket_name" {
-  description = "S3 bucket name used to store the lambda function code"
+  description = "S3 bucket used to store the lambda function code"
 
   value = aws_s3_bucket.lambda_bucket.id
 }
 
 output "lambda_function_name" {
-  description = "The lambda function name"
+  description = "Lambda function name"
 
   value = aws_lambda_function.greet.function_name
 }
 
 output "lambda_greet_arn" {
-  description = "The lambda function arn name"
+  description = "Lambda function arn name"
 
   value = aws_lambda_function.greet.arn
 }
