@@ -20,5 +20,11 @@ deploy: lint
 ls:
 	aws s3 ls `terraform output -raw lambda_bucket_name` --recursive
 
+run-lambda:
+	aws lambda invoke --region=$(terraform output -raw aws_region) --function-name=$(terraform output -raw lambda_function_name) out.txt
+	@echo
+	@eho "output from lambda:"
+	cat out.txt
+
 clean:
 	terraform destroy -auto-approve
