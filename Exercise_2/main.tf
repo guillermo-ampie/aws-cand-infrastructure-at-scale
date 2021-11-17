@@ -1,7 +1,8 @@
 #
-# Definition file for lambda function "greet"
-# - source file: greet_lambda.py
+# Definition file for lambda function: 
+# - lambda function: greet
 # - runtime: python
+# - source file: greet_lambda.py
 #
 
 terraform {
