@@ -1,4 +1,7 @@
-init:
+setup:
+	@echo "Setup tflint..."
+	tflint --init
+	@echo "Setup terraform..."
 	terraform init
 
 validate:
