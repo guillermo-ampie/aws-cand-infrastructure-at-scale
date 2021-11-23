@@ -1,0 +1,20 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Initial_Cost_Estimate,Amazon Virtual Private Cloud (VPC),0,66.16,793.92,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),Elastic Load Balancers,Application Load Balancer,0,63.15,757.80,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),Elastic Load Balancers,Network Load Balancer,0,16.82,201.84,USD,"Number of Network Load Balancers (1), Average number of new TCP connections (50 per second), Average TCP connection duration (3 minutes)"
+My Estimate,US East (N. Virginia),Static content and sample image library,S3 Standard,0,11.57,138.84,USD,S3 Standard storage (500 GB per month)
+My Estimate,US East (N. Virginia),Static content and sample image library,Data Transfer,0,460.71,5528.52,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (5 TB per month)"
+My Estimate,US East (N. Virginia),Web servers,Amazon EC2,0,721.78,8661.36,USD,"Operating system (Linux), Quantity (7), Pricing strategy (On-Demand Instances), Storage amount (50 GB), Instance type (t4g.xlarge)"
+My Estimate,US East (N. Virginia),App servers,Amazon EC2,0,5998.54,71982.48,USD,"Operating system (Linux), Quantity (10), Pricing strategy (On-Demand Instances), Storage amount (2 TB), Instance type (g4ad.2xlarge)"
+My Estimate,US East (N. Virginia),RDS - master,Amazon RDS for MariaDB,0,1126.4,13516.80,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (200 GB per month), Quantity (1), Instance type (db.m3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment selection (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),RDS - read replica,Amazon RDS for MariaDB,0,563.2,6758.40,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (200 GB per month), Quantity (1), Instance type (db.m3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment selection (Single-AZ), Pricing strategy (OnDemand)"
+
+
+DESCRIPTION
+"Monthly cost is 9028.33. Our app uses powerful Application Servers (instance type: g4ad.2xlarge) with one GPU. It uses sophisticated Machine Learning models to give the users the best experience in image classification and speech recognition. 
+- Our EC2 instances are On-demand ones. Our Finance Department is kind of wary about the costs of the application, and they want to have a more extensive user base to make longer commitments and choose reserved instances. 
+- The number of Web Servers is seven, and the number of App Servers is ten as an average in the corresponding auto-scaling group."
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."

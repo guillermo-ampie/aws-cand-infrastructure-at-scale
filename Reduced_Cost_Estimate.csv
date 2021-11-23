@@ -1,0 +1,21 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Initial_Cost_Estimate,Amazon Virtual Private Cloud (VPC),0,66.16,793.92,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),Elastic Load Balancers,Application Load Balancer,0,63.15,757.80,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),Elastic Load Balancers,Network Load Balancer,0,16.82,201.84,USD,"Number of Network Load Balancers (1), Average number of new TCP connections (50 per second), Average TCP connection duration (3 minutes)"
+My Estimate,US East (N. Virginia),Static content and sample image library,S3 Standard,0,11.57,138.84,USD,S3 Standard storage (500 GB per month)
+My Estimate,US East (N. Virginia),Static content and sample image library,Data Transfer,0,460.71,5528.52,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (5 TB per month)"
+My Estimate,US East (N. Virginia),Web servers,Amazon EC2,0,331.38,3976.56,USD,"Operating system (Linux), Quantity (7), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (50 GB), Instance type (t4g.xlarge)"
+My Estimate,US East (N. Virginia),App servers,Amazon EC2,0,4039.88,48478.56,USD,"Operating system (Linux), Quantity (10), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (2 TB), Instance type (g4ad.2xlarge)"
+My Estimate,US East (N. Virginia),RDS - master,Amazon RDS for MariaDB,0,416.47,4997.64,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (200 GB per month), Quantity (1), Instance type (db.m3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment selection (Single-AZ), Pricing strategy (Reserved 1yr No Upfront)"
+My Estimate,US East (N. Virginia),RDS - read replica,Amazon RDS for MariaDB,0,416.47,4997.64,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (200 GB per month), Quantity (1), Instance type (db.m3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment selection (Single-AZ), Pricing strategy (Reserved 1yr No Upfront)"
+
+
+DESCRIPTION
+"Monthly costs is: 5822.61. In this case, the primary goal was to maintain the overall user experience while meeting the budget constraints.  We convinced our Finance Department to keep the same processing power, storage capacity, and overall user experience while taking advantage of the different pricing models(for one and three-year commitments) offered by AWS: Reserved EC2 instances and EC2
+Instance Savings Plans: 
+- Web Server and App Servers with EC2 Instance Savings Plans 3 Year No Upfront: reduced costs and equal monthly payments for the overall three year period
+- RDS (master and replicas instances) with  Reserved 1yr No Upfront: reduced costs and equal monthly payments for the overall one year period
+- On the technical side, the only change was to make the RDS master instance Single-AZ, but because we are keeping the RDS Read replica, we will promote the read-replica in case of failure."
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."

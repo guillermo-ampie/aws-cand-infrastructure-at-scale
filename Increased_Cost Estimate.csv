@@ -1,0 +1,27 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),Initial_Cost_Estimate,Amazon Virtual Private Cloud (VPC),0,66.16,793.92,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),Elastic Load Balancers,Application Load Balancer,0,63.15,757.80,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),Elastic Load Balancers,Network Load Balancer,0,16.82,201.84,USD,"Number of Network Load Balancers (1), Average number of new TCP connections (50 per second), Average TCP connection duration (3 minutes)"
+My Estimate,US East (N. Virginia),Static content and sample image library,S3 Standard,0,11.57,138.84,USD,S3 Standard storage (500 GB per month)
+My Estimate,US East (N. Virginia),Static content and sample image library,Data Transfer,0,460.71,5528.52,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (5 TB per month)"
+My Estimate,US East (N. Virginia),Web servers,Amazon EC2,0,910.03,10920.36,USD,"Operating system (Linux), Quantity (10), Pricing strategy (EC2 Instance Savings Plans 3 Year No Upfront), Storage amount (50 GB), Instance type (t4g.2xlarge)"
+My Estimate,US East (N. Virginia),App servers,Amazon EC2,0,10534.67,126416.04,USD,"Operating system (Linux), Quantity (10), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (2 TB), Instance type (g4ad.8xlarge)"
+My Estimate,US East (N. Virginia),RDS - master,Amazon RDS for MariaDB,0,1036.94,12443.28,USD,"Storage volume (Provisioned IOPS SSD (io1)), Provisioning IOPS (1000), Storage amount (200 GB per month), Quantity (1), Instance type (db.m3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment selection (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront)"
+My Estimate,US East (N. Virginia),RDS - read replica #5,Amazon RDS for MariaDB,0,1036.94,12443.28,USD,"Storage volume (Provisioned IOPS SSD (io1)), Provisioning IOPS (1000), Storage amount (200 GB per month), Quantity (1), Instance type (db.m3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment selection (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront)"
+My Estimate,US East (N. Virginia),RDS - read replica #4,Amazon RDS for MariaDB,0,1036.94,12443.28,USD,"Storage volume (Provisioned IOPS SSD (io1)), Provisioning IOPS (1000), Storage amount (200 GB per month), Quantity (1), Instance type (db.m3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment selection (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront)"
+My Estimate,US East (N. Virginia),RDS - read replica #3,Amazon RDS for MariaDB,0,1036.94,12443.28,USD,"Storage volume (Provisioned IOPS SSD (io1)), Provisioning IOPS (1000), Storage amount (200 GB per month), Quantity (1), Instance type (db.m3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment selection (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront)"
+My Estimate,US East (N. Virginia),RDS - read replica #2,Amazon RDS for MariaDB,0,1036.94,12443.28,USD,"Storage volume (Provisioned IOPS SSD (io1)), Provisioning IOPS (1000), Storage amount (200 GB per month), Quantity (1), Instance type (db.m3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment selection (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront)"
+My Estimate,US East (N. Virginia),RDS - read replica #2,Amazon RDS for MariaDB,0,1036.94,12443.28,USD,"Storage volume (Provisioned IOPS SSD (io1)), Provisioning IOPS (1000), Storage amount (200 GB per month), Quantity (1), Instance type (db.m3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment selection (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront)"
+
+
+DESRIPTION
+"Monthly cost is 18284.75. The company is fully compromised with the project, so with the extended budget, we increased performance and availability:
+- We have 5 RDS read replicas deployed as Multi-AZ for increased read performance and availability
+- Master RDS deployed as Multi-AZ for increased availability
+- All RDS instances are configured with Provisioned IOPS SSD (io1) disks for increased I/O disk performance
+- More powerful App Servers: instance type changed from g4ad.2xlarge to g4ad.8xlarge for improved performance
+- More powerful Web Servers: instance type changed from t4g.xlarge to t4g.2xlarge
+- Web servers increased from 7 to 10 instances (average) in the auto-scaling group"
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
